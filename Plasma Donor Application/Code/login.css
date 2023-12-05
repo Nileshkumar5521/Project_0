@@ -1,0 +1,81 @@
+body{
+   margin: 0px;
+}
+.container{
+    background-color: #EFF5F5;
+    height: 100%;
+}
+.header{
+    background-color: #D6E4E5;
+    display: flex;
+    width: 50%;
+    border-radius: 25px 25px 25px 25px;
+  margin: auto;
+}
+.nav_left{
+    width: 40%;
+   
+}
+#plasma_donor{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+  
+   
+}
+.nav_right{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    left: -40px;
+}
+.nav{
+    display: inline-flex;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.nav:hover{
+    color: #EFF5F5;
+}
+/* body*/
+.body_container{
+    display: flex;
+    justify-content: center;
+    height: 650px;
+}
+.login{
+    margin-top: 200px;
+    width: 15%;
+    height: 40%;
+    background-color: #D6E4E5;
+    border-width: 1px;
+    border-radius: 15px 15px 15px 15px;
+}
+legend{
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.login_unit{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+#username{
+    height: 25px;
+    border-radius: 10px;
+}
+#log_passward{
+    height: 25px;
+    border-radius: 10px;
+}
+#login_button{
+margin-left: 150px;
+height: 25px;
+    border-radius: 5px;
+    background-color: #EB6440;
+}
+#login_button:hover{
+    color: azure;
+}
