@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numed Systems</title>
+    <link rel="stylesheet" href="../css/mainpage.css">
+    <link rel="stylesheet" href="../js/mainpage.js">
+    
+</head>
+<body>
+    <section class="header-section">
+        <div class="nav-unit" >
+            
+            <div class="logo">
+                <a href="#home"><img id="logo" src="../asset/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <a href="#home" class="nav-link" onclick="changeColur(this)">Home</a>
+                <a href="#Solution"class="nav-link" onclick="changeColur(this)">Solution</a>
+                <a href="./shop.html" class="nav-link" onclick="changeColur(this)">Shop</a>
+                <a href="#About us" class="nav-link" onclick="changeColur(this)">About us</a>
+                <a href="#contact us" class="nav-link" onclick="changeColur(this)">contact us</a>
+            </div>
+        </div>
+        <div class="content-unit">
+        <div class="header-title">
+            <h1>Top Rated Solution Provider For Healthcare Productas </h1>
+            <h3>Numed Systems, an ISO 13485-2015 Organisation.</h3>
+            <br>
+                <ul>
+                    <p>> Medical Equipment Installtion Solution</p>
+                    <P>> MRI Shielding Solution</P>
+                    <p>> Healtcare Infrastructure Solution</p>
+                    
+                </ul>
+        </div>
+         <div class="button-container">
+            <input type="button" value="Download Brochure" onchange="" id="download-btn" class="button" >
+            <input type="button" value=" Request a Free Counsultaion" onchange="" id="btn"  class="button btn">
+         </div>
+        </div>
+    </section>
+    <section class="main-body">
+        <div class="container">
+            <h1  class="heading"> We Stand For </h1>
+            <p class="content">NuMed Systems established our expertise in the healthcare industry in 2015. With nearly 8 years of experience working in hospital environments, we developed a complete and seamless process for medical equipment installation services. </p>
+        </div>
+        <div class="container-unit">
+            <div class="box-img">
+                <img src="/asset/home-aboutus-1024x868.jpg" alt="about-us-img" id="box-img">
+            </div>
+            <div class="box">
+                <h1 class=" header">NuMed Systems</h1>
+                <p class="content">NuMed Systems Private limited an ISO 13485-2015 organisation, A Leading Radio Frequency Shielding manufacturer, Vendor for Medical equipment Installations for Major OEMs and a Solution provider for Equipment planning and turnkey solutions, practices vendor-neutral business principles follow NDA (Non-disclosure agreement) with its clients ensures utmost confidentiality of client data and technology. NuMed Systems Established in 2015 as proprietorship later re-launched as private limited in 2018. Over these year NuMed could establish as a most reliable vendor and a solution provider to many major OEMs and clients.
+                </p>
+                
+            </div>
+        </div>
+        <br>
+       <hr width="75%" size="2" color="#AF2228">
+       <br>
+        <div class="container unit">
+            <h1 class="header">Our Products </h1>
+            <p class="content">We've been in this business for more than three decades, with the aim of providing high-quality products to our customers.</p>
+            <div class="products-card-unit">
+                <div class="products-cards"  >
+                    <img src="/asset/1.jpg" alt="" id="products-cards">
+                    <h2 class="card-title">Medical Equipment Installation Solutions</h2>
+                    <p class="card-content ">Starting from Rs.25,500.</p>
+                    <input type="button" value="learn more" class="products-btn">
+                </div>
+                <div class="products-cards"  >
+                    <img src="/asset/2.jpg" alt="" id="products-cards">
+                    <h2 class="card-title">Medical Equipment Installation Solutions</h2>
+                    <p class="card-content ">Starting from Rs.25,500.</p>
+                    <input type="button" value="learn more" class="products-btn">
+                </div>
+                <div class="products-cards"  >
+                    <img src="/asset/3.jpg" alt="" id="products-cards">
+                    <h2 class="card-title"> MRI-Shielding Solutions</h2>
+                    <p class="card-content ">Starting from Rs.25,500.</p>
+                    <input type="button" value="learn more" class="products-btn">
+                </div>
+        </div>
+        <br>
+        <input type="button" value="View more products" class=" view-button">
+    </div>
+    <br>
+    <hr width="75%" size="2" color="#AF2228">
+    </section>
+    <secctio class="carousel-container-unit">
+        <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="/asset/1.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/2.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/3.jpg" alt="Image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/1.jpg" alt="Image 4">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/2.jpg" alt="Image 5">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/3.jpg" alt="Image 6">
+              </div><div class="carousel-item">
+                <img src="/asset/1.jpg" alt="Image 7">
+              </div>
+              <div class="carousel-item">
+                <img src="/asset/2.jpg" alt="Image 8">
+              </div>
+            </div>
+          </div>
+          <script>
+            const carousel = document.querySelector('.carousel');
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+
+function moveToIndex(index) {
+  if (index < 0 || index >= carouselItems.length) {
+    return;
+  }
+  currentIndex = index;
+  const translateX = -currentIndex * 100;
+  carousel.style.transform = `translateX(${translateX}%)`;
+}
+
+setInterval(() => {
+  const nextIndex = (currentIndex + 1) % carouselItems.length;
+  moveToIndex(nextIndex);
+}, 2000); // Change slide every 3 seconds
+          </script>
+
+    </secctio>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover .card-image {
+    transform: scale(1.1);
+  }
+
+  .card-content {
+    font-size: 14px;
+    color: #555;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .card:hover .card-content {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <img class="card-image" src="image.jpg" alt="Card Image">
+  <div class="card-content">
+    <h2>Card Title</h2>
+    <p>This is some sample content for the card. You can customize it as needed.</p>
+  </div>
+</div>
+</body>
+</html>
